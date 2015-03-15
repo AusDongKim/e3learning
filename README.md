@@ -7,7 +7,7 @@
 ###src/main/java
 ####controller : request controller 
 ####service  : business logic stage
-####dao   : data access and manuplation
+####dao   : data access and manipulation
 ###src/main/test  : unit, integration test classes
 ###WebContent
 ####WEB-INF/spring : spring cofiguration
