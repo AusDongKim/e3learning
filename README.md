@@ -13,7 +13,7 @@
 ####WEB-INF/spring : spring cofiguration
 ####/ jsp : file 
 ## Usage
-URL  :  localhost/{contextRoot}/index 
+###URL  :  http://localhost/{contextRoot}/index 
 
 
 TODO: Write usage instructions
