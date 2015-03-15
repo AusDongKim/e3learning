@@ -1,0 +1,140 @@
+<div class="container" ng-controller="accountController" ng-init="init()">
+	<section>
+		<article>
+			<h4>{{viewName}}</h4>
+			<p>searched :<span ng-bind="accountData.length"></span></p> 
+		</article>
+	</section>
+	<div class="table-responsive">
+		<a ng-click="addAcount()" class="btn btn-primary active">Add Account</a>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Account Status</th>
+					<th>Address</th>
+					<th>Training</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="account in accountData">
+					<td>{{account.firstName}}</td>
+					<td>{{account.firstName}}</td>
+					<td>{{account.activeState |  viewActiveState}}</td>
+					<td>{{account.addressStreet +" " + account.addressSuburb +" "+account.addressState}}</td>
+					<td>&nbsp;<a href="" ng-click="$parent.viewTraining(account)">View</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+	<div id="trainingView" ng-show="viewAccountTrainingHistory" tabindex=1>
+		<section>
+			<article>
+				<h4>{{accountTrainingHistory.account.firstName + accountTrainingHistory.account.lastName}} Training History</h4>
+			</article>
+		</section>
+		<a href="" ng-click="addTraining()" class="btn btn-primary active">Assign Training</a>
+		<div ng-show="accountTrainingHistory.length<=0" class="alert alert-danger" role="alert">
+			No Training Record!
+		</div>
+		<table class="table table-striped" ng-show="accountTrainingHistory.length > 0">
+			<thead>
+				<tr>
+					<th>Course Name</th>
+					<th>Start Date</th>
+					<th>Complete Date</th>
+					<th>Training State</th>
+					<th>Grade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="train in accountTrainingHistory">
+					<td>{{train.course.courseTitle}}</td>
+					<td>{{train.startDate}}</td>
+					<td>
+					<span ng-show="train.trainingState=='F'">
+						{{train.course.endDate}}
+					</span>
+					</td>
+					<td>
+						{{train.trainingState |  viewTrainingSate}}
+						<span ng-show="train.trainingState=='F'">
+							Grade: <span ng-bind="train.grade"></span>
+						</span>
+					</td>
+					<td>
+						<div ng-show="train.trainingState=='I'">					
+							<button class="form-control">Finish</button>							
+						</div>					
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="addTrainingModal" class="modal fade bs-example-modal-lg" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+	    	<div class="modal-content">
+	    	<h4>Training Register</h4>
+	    	<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>Course Name</th>
+						<th>V</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="course in courseData">
+						<td>{{course.courseTitle}}</td>
+						<td>
+						<a href="" ng-click="registerTraining(course)">Register Training</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	    	</div>
+	    </div>
+	</div>
+	
+	<div id="addAccountModal" class="modal fade bs-example-modal-lg" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+			<h4>New Account</h4>	
+			<form role="form">
+			  <div class="form-group">
+			    <label for="firstName">First Name</label>
+			    <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" ng-model="accountForm.firstName">
+			  </div> 
+			  <div class="form-group">
+			    <label for="lastName">Last Name</label>
+			    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" ng-model="accountForm.lastName">
+			  </div> 
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Email</label>
+			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Email" ng-model="accountForm.email">
+			  </div> 
+			  <div class="form-group">
+			    <label for="exampleInputEmail1">Address</label>
+			    <br>Street : <input type="text" class="form-control" id="addressStreet" placeholder="Enter Street ex) 5 waterways street"
+			    ng-model="accountForm.addressStreet"
+			    >
+			    Suburb : <input type="text" class="form-control" id="addressSuburb" placeholder="Enter Suburb"
+			    ng-model="accountForm.addressSuburb"
+			    >
+			    State : <input type="text" class="form-control" id="addressState" placeholder="Enter State"
+			    ng-model="accountForm.addressState"
+			    >
+			    Country : <input type="text" class="form-control" id="addressCountry" placeholder="Enter Country"
+			    ng-model="accountForm.addressCountry">
+			  </div> 
+			  <div class="form-group">
+			  	<input type="button" ng-click="registAccount()" value="Create Account">
+			  </div>
+			  
+			 </form>
+	    </div>
+	  </div>
+	</div>
+</div>

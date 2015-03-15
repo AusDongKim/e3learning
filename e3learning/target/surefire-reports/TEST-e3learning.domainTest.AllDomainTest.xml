@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite failures="1" time="0.1" errors="0" skipped="0" tests="3" name="e3learning.domainTest.AllDomainTest">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries"/>
+    <property name="java.vm.version" value="20.65-b04-462"/>
+    <property name="awt.nativeDoubleBuffering" value="true"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="mrj.build" value="11M4609"/>
+    <property name="java.vm.vendor" value="Apple Inc."/>
+    <property name="java.vendor.url" value="http://www.apple.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/openlinuz/Project/WorkspaceLuna/e3learning"/>
+    <property name="java.runtime.version" value="1.6.0_65-b14-462-11M4609"/>
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/vb/rq0c_j3s33973677yhdc787c0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/openlinuz/Project/WorkspaceLuna/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5286569659030825392.tmp"/>
+    <property name="sun.jnu.encoding" value="MacRoman"/>
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="50.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.9.3"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/openlinuz"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob"/>
+    <property name="java.specification.version" value="1.6"/>
+    <property name="file.encoding" value="MacRoman"/>
+    <property name="user.name" value="openlinuz"/>
+    <property name="java.class.path" value="/Users/openlinuz/Project/Software/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.5.1.20150109-1819/jars/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.0"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test"/>
+    <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="apple.awt.CToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.6.0_65"/>
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext"/>
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar"/>
+    <property name="java.vendor" value="Apple Inc."/>
+    <property name="maven.home" value="/Users/openlinuz/Project/WorkspaceLuna/e3learning/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="mrj.version" value="1070.1.6.0_65-462"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase time="0.062" classname="e3learning.domainTest.AccountTest" name="setAccount">
+    <failure message="expected null, but was:&lt;2015-03-13 13:41:59.0&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected null, but was:&lt;2015-03-13 13:41:59.0&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotNull(Assert.java:755)
+	at org.junit.Assert.assertNull(Assert.java:737)
+	at org.junit.Assert.assertNull(Assert.java:747)
+	at e3learning.domainTest.AccountTest.setAccount(AccountTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:72)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:81)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:216)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:82)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:60)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:67)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:162)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-err>Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@199de181, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c3fe94a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@77ed2061, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@70e8fdc9]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@175c30f6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@25927275, org.springframework.test.context.transaction.TransactionalTestExecutionListener@31987298, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@f8b7298]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+INFO: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper instantiateListeners
+INFO: Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+Mar 13, 2015 1:41:59 PM org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+INFO: Using TestExecutionListeners: [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6b1af7bb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@377e4cec, org.springframework.test.context.transaction.TransactionalTestExecutionListener@44ec366a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6fe88c7f]
+</system-err>
+  </testcase>
+  <testcase time="0.019" classname="e3learning.domainTest.CourseTest" name="setCourse"/>
+  <testcase time="0.019" classname="e3learning.domainTest.TrainingTest" name="setTraining"/>
+</testsuite>

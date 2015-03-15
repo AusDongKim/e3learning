@@ -1,0 +1,45 @@
+<div class="container" ng-controller="courseController" ng-init="init()">
+<section>
+		<article>
+			<h4>{{viewName}}</h4>
+			<p>searched :<span ng-bind="courseData.length"></span></p> 
+		</article>
+	</section>
+	<div class="table-responsive">
+		<a ng-click="addCourse()" class="btn btn-primary active">Add Course</a>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>Course Title</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="course in courseData">
+					<td>{{course.courseTitle}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+	
+	<div id="addCourseModal" class="modal fade bs-example-modal-sm" role="dialog" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+			<h4>New Course</h4>	
+			<form role="form">
+			  <div class="form-group">
+			    <label for="courseTitle">courseTitle</label>
+			    <input type="text" class="form-control" id="courseTitle" placeholder="Enter course title" ng-model="courseForm.courseTitle">
+			  </div>
+			  <div class="form-group">
+			  	<input type="button" ng-click="registerCourse()" value="Create Course">
+			  </div>
+			 </form>
+	    </div>
+	  </div>
+	</div>
+	
+</div>
+
+
+	
+	
