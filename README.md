@@ -1,5 +1,4 @@
 <snippet>
-  <content><![CDATA[
 # e3Learning A&T Project
  
 
@@ -41,6 +40,5 @@ TODO: Write usage instructions
 
 TODO: Write credits
 
-]]></content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
