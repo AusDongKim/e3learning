@@ -1,17 +1,52 @@
-1. Current State
-  1.1. DONE 
-  Account Management 
-    - Register Account
-    - Register Trainings for an account
-  Course Management 
-    - Register Courses
-  1.2. TO DO 
-  Account Managment 
-     - Validation for form data 
-     - Modify, Delete Account 
-     - Update Training Record 
-     - Check Duplication of registering taken course
-     
-  Course Managment
-     - Modify, Delete Account
-   
+<snippet>
+  <content><![CDATA[
+# e3Learning A&T Project
+ 
+
+## Directy Structure
+src/main/resource  -- resource files (properties, database connector, validation messages)
+src/main/java
+            - controller : request controller 
+            - service  : business logic stage
+            - dao   : data access and manuplation
+src/main/test  : unit, integration test classes
+WebContent
+          WEB-INF/spring : spring cofiguration
+                / jsp : file 
+## Usage
+
+URL  :  localhost/{contextRoot}/index 
+
+
+TODO: Write usage instructions
+
+## CURRENT STATE
+###DONE
+ 1. Register Account
+ 2. Register Trainings for an account
+ 3. Course Management 
+ 4. Register Courses
+###TODO
+ 1. Validation for form data 
+ 2. Modify, Delete Account 
+ 3. Update Training Record 
+ 4. Check Duplication of registering taken course
+ 5. Course Managment - Modify, Delete Account
+
+## Document
+1. ER Diagram
+2. Table create DML
+3. Wireframework
+
+TODO: Write history
+
+## Credits
+
+TODO: Write credits
+
+## License
+
+TODO: Write license
+]]></content>
+  <tabTrigger>readme</tabTrigger>
+</snippet>
