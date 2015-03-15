@@ -2,16 +2,16 @@
 # e3Learning A&T Project
  
 
-## Directy Structure
-src/main/resource  -- resource files (properties, database connector, validation messages)
-src/main/java
-controller : request controller 
-service  : business logic stage
-dao   : data access and manuplation
-src/main/test  : unit, integration test classes
-WebContent
-WEB-INF/spring : spring cofiguration
-/ jsp : file 
+## Directory Structure
+###src/main/resource  -- resource files (properties, database connector, validation messages)
+###src/main/java
+####controller : request controller 
+####service  : business logic stage
+####dao   : data access and manuplation
+###src/main/test  : unit, integration test classes
+###WebContent
+####WEB-INF/spring : spring cofiguration
+####/ jsp : file 
 ## Usage
 URL  :  localhost/{contextRoot}/index 
 
