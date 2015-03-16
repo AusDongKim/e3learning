@@ -258,7 +258,6 @@ body
 						    	alert(data.errorMsg.join(",").replace(/,/g,"\n"));						    	
 						  	} else {
 						  		$scope.courseForm={};
-						  		$scope.$digest();
 						  	}						  	
 					  },
 					  dataType: "json", 
